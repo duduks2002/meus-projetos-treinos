@@ -1,0 +1,380 @@
+///////////////////////////////////////////////////////////////////////
+// ALUNO1: Edward A. Fernandes N6247G8                              //                           //
+//                                                                 //
+// LPA e IPE                                                      //
+// Prof.Eliane 
+// Portugol                                                     //
+/////////////////////////////////////////////////////////////////
+Algoritmo "Seguro-Desemprego"
+
+Var  tipos, r1, r2, r3, r4, r5, r6, parcela:caractere
+ us, ps, aps, ms, beneficio:real
+
+Inicio
+//Quem tem direito ao beneficio:
+   escreval("PARA SABER SE VOCÊ ESTÁ QUALIFICADO PARA RECEBER O SEGURO,PRECISAMOS SABER SE")
+   escreval("Você é um: ")
+   escreval("")
+   escreval("A- Trabalhador Formal,em virtude da dispensa sem justa causa,inclusive dispensa indireta;")
+   escreval("")
+   escreval("B- Trabalhador Doméstico,em virtude da dispensa sem justa causa,inclusive dispensa indireta;")
+   escreval("")
+   escreval("C- Trabalhador Formal com contrato de trabalho suspenso em virtude de participaçao em curso")
+   escreval("ou programa de qualificação profissional oferecido pelo empregador;")
+   escreval("")
+   escreval("D- Pescador profissional durante periodo de defeso;")
+   escreval("")
+   escreval("E- Trabalhador resgatado da condição semelhante à de escravo.")
+   escreval("")
+   escreva("Tipo de trabalhador: ")
+   leia(tipos)
+   se (tipos ="a")ou(tipos="A") entao
+      escreval("=====Analisando se você pode receber o beneficio=====")
+   senao
+      se (tipos="b")ou(tipos="B") entao
+         escreval("=====Analisando se você pode receber o beneficio=====")
+      senao
+         se (tipos="c")ou(tipos="C") entao
+            escreval("=====Analisando se você pode receber o beneficio=====")
+         senao
+            se (tipos="d")ou(tipos="D") entao
+               escreval("=====Analisando se você pode receber o beneficio=====")
+            senao
+               se (tipos="e")ou(tipos="E") entao
+                  escreval("=====Analisando se você pode receber o beneficio=====")
+               senao
+                  escreva("<><><><><><><>Você não pode receber o beneficio<><><><><><><>")
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+//Condiçoes para receber o beneficio:
+   
+se (tipos ="a")ou(tipos="A") entao
+  escreval("")
+  escreval(" Responda as perguntas com S para sim e N para não !")
+  escreva("Você foi dispensado SEM justa causa?")
+  leia(r1)
+  escreval("")
+  escreva("Você recebeu salários de pessoa jurídica/física,no periodo de 6 meses consecutivos,imediatamente anteriores à data de dispensa?")
+  leia(r2)
+  escreval("")
+  escreva("Esta desempregado neste momento?")
+  leia(r3)
+  escreval("")
+  escreva("possui renda própria de qualquer natureza suficiente à sua manutenção e a de sua familia?")
+  leia(r4)
+  escreval("")
+  escreva("Está em gozo de qualquer benefício previdenciário de prestação continuada?(exceção do auxílio-acidente e pensão por morte)")
+  leia(r5)
+  escreval("")
+  escreva("Foi empregado de pessoa jurídica ou de pessoa física equiparada à jurídica,pelo menos 12 meses nos últimos 36 meses que antecedem a data de dispensa?")
+  leia(r6)
+  escreval("")
+
+fimse
+
+
+ se (tipos ="b")ou(tipos="B") entao
+  escreval("")
+  escreval(" Responda as perguntas com S para sim e N para não !")
+  escreva("Você foi dispensado SEM justa causa?")
+  leia(r1)
+  escreval("")
+  escreva("Você trabalhou,EXCLUSIVAMENTE,como empregado doméstico,pelo período mínimo de 15 meses nos últimos 24 meses que antecederam a data de dispensa que deu origem ao requerimento do Seguro-Desemprego?")
+  leia(r2)
+  escreval("")
+  escreva("possui renda própria de qualquer natureza suficiente à sua manutenção e a de sua familia?")
+  leia(r3)
+  escreval("")
+  escreva("Está em gozo de qualquer benefício previdenciário de prestação continuada?(exceção do auxílio-acidente e pensão por morte)")
+  leia(r4)
+  escreval("")
+
+ fimse
+
+
+ se (tipos ="c")ou(tipos="C") entao
+  escreval(" Responda as perguntas com S para sim e N para não !")
+  escreval("")
+  escreva("Está com o contrato de trabalho suspenso?")
+  leia(r1)
+  escreval("")
+  escreva("Foi matriculado em um curso ou programa de qualificação profissional,oferecido pelo empregador?")
+  leia(r2)
+  escreval("")
+  escreva("Esta desempregado neste momento?")
+  leia(r3)
+  escreval("")
+  escreva("possui renda própria de qualquer natureza suficiente à sua manutenção e a de sua familia?")
+  leia(r4)
+  escreval("")
+  escreva("Está em gozo de qualquer benefício previdenciário de prestação continuada?(exceção do auxílio-acidente e pensão por morte)")
+  leia(r5)
+  escreval("")
+
+ fimse
+ 
+
+ se (tipos ="d")ou(tipos="D") entao
+  escreval(" Responda as perguntas com S para sim e N para não !")
+  escreval("")
+  escreva("Possui inscrição no INSS como segurado especial?")
+  leia(r1)
+  escreval("")
+  escreva("Possui comprovação de venda do pescado a adquirente pessoa jurídica/cooperativa,no período correspondente aos últimos 12 meses que antecederam ao início do defeso?")
+  leia(r2)
+  escreval("")
+  escreva("Está em gozo de qualquer benefício de prestação continuada da Previdência Social ou da Assistência Social?(exceção do auxílio-acidente e pensão por morte)")
+  leia(r3)
+  escreval("")
+  escreva("Tem como comprovar o exercício profissional da atividade de pesca artesanal objeto do defeso e dedicou à pesca,em caráter ininterrupto,durante o período compreendido entre o defeso anterior e o em curso?")
+  leia(r4)
+  escreval("")
+  escreva("Comtém vínculo de emprego ou outra relação de trabalho ou outra fonte de renda diversa da decorrente da atividade pesqueira?")
+  leia(r5)
+  escreval("")
+
+ fimse
+ 
+
+ se (tipos ="e")ou(tipos="E") entao
+  escreval(" Responda as perguntas com S para sim e N para não !")
+  escreval("")
+  escreva("Foi comprovadamente resgatado do regime de terabalho forçado ou da condição análoga à de escravo em decorrência de ação de fiscalização do MTE?")
+  leia(r1)
+  escreval("")
+  escreva("Está em gozo de qualquer benefício previdenciário de prestação continuada?(exceção do auxílio-acidente e pensão por morte)")
+  leia(r2)
+  escreval("")
+  escreva("possui renda própria de qualquer natureza suficiente à sua manutenção e a de sua familia?")
+  leia(r3)
+  escreval("")
+
+ fimse
+
+ /////parcelas:
+ 
+ 
+ se (tipos="A")ou (tipos="a")entao
+  se((r1="s")ou(r1="S")) e((r2="s")ou(r2="S")) e((r3="s")ou (r3="S")) e((r4="n")ou(r4="N")) e((r5="n")ou(r5="N"))e ((r6="s")ou(r6="S")) entao
+  escreval("<><><><><><>CALCULANDO PARCELAS...<><><><><><>")
+  escreval("======Em Qual destes você se aplica?=====")
+  escreval("")
+  escreval("A- (COMPROVAR)Vínculo empregatício de no mínimo 6 meses e no máximo 11 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("B- (COMPROVAR)Vínculo empregatício de no mínimo 12 meses e no máximo 23 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("C- (COMPROVAR)Vínculo empregatício de no mínimo 24 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("D- Nenhuma das anteriores.")
+  escreval("")
+  escreva("R: ")
+  leia(parcela)
+    se (parcela="D")ou(parcela="d")entao
+     escreval("><><><><><><BENEFÍCIO NEGADO><><><><><><")
+     fimalgoritmo
+    fimse
+  senao
+    escreval("<><><><><><><><><><>BENEFÍCIO NEGADO<><><><><><><><><><>")
+    fimalgoritmo
+    
+  FIMSE
+ fimse
+
+
+ se (tipos="B")ou (tipos="b")entao
+  se((r1="s")ou(r1="S")) e((r2="s")ou(r2="S")) e((r3="n")ou (r3="N")) e((r4="n")ou(r4="N")) entao
+  escreval("<><><><><><>CALCULANDO PARCELAS...<><><><><><>")
+  escreval("======Em Qual destes você se aplica?=====")
+  escreval("")
+  escreval("A- (COMPROVAR)Vínculo empregatício de no mínimo 6 meses e no máximo 11 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("B- (COMPROVAR)Vínculo empregatício de no mínimo 12 meses e no máximo 23 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("C- (COMPROVAR)Vínculo empregatício de no mínimo 24 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("D- Nenhuma das anteriores.")
+  escreval("")
+  escreva("R: ")
+  leia(parcela)
+    se (parcela="D")ou(parcela="d")entao
+     escreval("><><><><><><BENEFÍCIO NEGADO><><><><><><")
+     fimalgoritmo
+    fimse
+  senao
+    escreval("<><><><><><><><><><>BENEFÍCIO NEGADO<><><><><><><><><><>")
+    fimalgoritmo
+   FIMSE
+ fimse
+
+
+se (tipos="c")ou (tipos="C")entao
+  se((r1="s")ou(r1="S")) e((r2="s")ou(r2="S")) e((r3="s")ou (r3="S")) e((r4="n")ou(r4="N")) e((r5="n")ou(r5="N")) entao
+  escreval("<><><><><><>CALCULANDO PARCELAS...<><><><><><>")
+  escreval("======Em Qual destes você se aplica?=====")
+  escreval("")
+  escreval("A- (COMPROVAR)Vínculo empregatício de no mínimo 6 meses e no máximo 11 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("B- (COMPROVAR)Vínculo empregatício de no mínimo 12 meses e no máximo 23 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("C- (COMPROVAR)Vínculo empregatício de no mínimo 24 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("D- Nenhuma das anteriores.")
+  escreval("")
+  escreva("R: ")
+  leia(parcela)
+    se (parcela="D")ou(parcela="d")entao
+     escreval("><><><><><><BENEFÍCIO NEGADO><><><><><><")
+     fimalgoritmo
+    fimse
+  senao
+    escreval("<><><><><><><><><><>BENEFÍCIO NEGADO<><><><><><><><><><>")
+    fimalgoritmo
+  FIMSE
+ fimse
+
+
+ se (tipos="D")ou (tipos="d")entao
+  se((r1="s")ou(r1="S")) e((r2="s")ou(r2="S")) e((r3="n")ou (r3="N")) e((r4="s")ou(r4="S")) e((r5="n")ou(r5="N")) entao
+  escreval("<><><><><><>CALCULANDO PARCELAS...<><><><><><>")
+  escreval("======Em Qual destes você se aplica?=====")
+  escreval("")
+  escreval("A- (COMPROVAR)Vínculo empregatício de no mínimo 6 meses e no máximo 11 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("B- (COMPROVAR)Vínculo empregatício de no mínimo 12 meses e no máximo 23 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("C- (COMPROVAR)Vínculo empregatício de no mínimo 24 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("D- Nenhuma das anteriores.")
+  escreval("")
+  escreva("R: ")
+  leia(parcela)
+    se (parcela="D")ou(parcela="d")entao
+     escreval("><><><><><><BENEFÍCIO NEGADO><><><><><><")
+     fimalgoritmo
+    fimse
+  senao
+    escreval("<><><><><><><><><><>BENEFÍCIO NEGADO<><><><><><><><><><>")
+    fimalgoritmo
+  FIMSE
+ fimse
+ 
+ 
+ se (tipos="E")ou (tipos="e")entao
+  se((r1="s")ou(r1="S")) e((r2="n")ou(r2="N")) e((r3="n")ou (r3="N")) entao
+  escreval("<><><><><><>CALCULANDO PARCELAS...<><><><><><>")
+  escreval("======Em Qual destes você se aplica?=====")
+  escreval("")
+  escreval("A- (COMPROVAR)Vínculo empregatício de no mínimo 6 meses e no máximo 11 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("B- (COMPROVAR)Vínculo empregatício de no mínimo 12 meses e no máximo 23 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("C- (COMPROVAR)Vínculo empregatício de no mínimo 24 meses,nos últimos 36 meses;")
+  escreval("")
+  escreval("D- Nenhuma das anteriores.")
+  escreval("")
+  escreva("R: ")
+  leia(parcela)
+    se (parcela="D")ou(parcela="d")entao
+     escreval("><><><><><><BENEFÍCIO NEGADO><><><><><><")
+     fimalgoritmo
+    fimse
+  senao
+    escreval("<><><><><><><><><><>BENEFÍCIO NEGADO<><><><><><><><><><>")
+    fimalgoritmo
+  FIMSE
+ fimse
+ 
+ 
+ //Cálculo do Benefício:
+ escreval("<><><><><>ETAPA FINAL<><><><><>")
+ escreval("")
+ escreva("Salário do ultimo mês.....:R$")
+ leia(us)
+ escreva("Salário do penúltimo mês.....:R$")
+ leia(ps)
+ escreva("Salário do antepenúltimo mês.....:R$")
+ leia(aps)
+
+     ms<-(us+ps+aps)/3
+
+ se (parcela="A")ou(parcela="a")entao
+  escreval("Média Salarial de R$ ",ms)
+  escreval("")
+  escreval("numero de parcelas = 3")
+  escreval("")
+
+
+  se (ms>2038.15) entao //funcionando
+        beneficio<- 1385.91
+  senao
+   se (ms<=1222.77)entao //funcionando
+  beneficio<-ms*0.8
+    se (beneficio<1045.00)entao //funcionando
+       beneficio<-1045.00
+    fimse
+   senao
+     se (ms>=1222.78) e (ms<=2038.15)entao//funcionando
+         beneficio<-ms*0.5 + 978.22
+     fimse
+
+   fimse
+  fimse
+ escreval("Valor do beneficio = R$",beneficio)
+ fimse
+
+ /////////////////////////////////////////////////////
+ se (parcela="B")ou(parcela="b")entao
+  escreval("Média Salarial de R$ ",ms)
+  escreval("")
+  escreval("numero de parcelas = 4")
+  escreval("")
+
+
+  se (ms>2038.15) entao //funcionando
+        beneficio<- 1385.91
+  senao
+   se (ms<=1222.77)entao //funcionando
+  beneficio<-ms*0.8
+    se (beneficio<1045.00)entao //funcionando
+       beneficio<-1045.00
+    fimse
+   senao
+     se (ms>=1222.78) e (ms<=2038.15)entao//funcionando
+         beneficio<-ms*0.5 + 978.22
+     fimse
+
+   fimse
+  fimse
+ escreval("Valor do beneficio = R$",beneficio)
+
+ fimse
+ /////////////////////////////////////////////////////
+ se (parcela="C")ou(parcela="c")entao
+  escreval("Média Salarial de R$ ",ms)
+  escreval("")
+  escreval("numero de parcelas = 5")
+  escreval("")
+
+
+  se (ms>2038.15) entao //funcionando
+        beneficio<- 1385.91
+  senao
+   se (ms<=1222.77)entao //funcionando
+  beneficio<-ms*0.8
+    se (beneficio<1045.00)entao //funcionando
+       beneficio<-1045.00
+    fimse
+   senao
+     se (ms>=1222.78) e (ms<=2038.15)entao//funcionando
+         beneficio<-ms*0.5 + 978.22
+     fimse
+
+   fimse
+  fimse
+ escreval("Valor do beneficio = R$",beneficio)
+
+ fimse
+Fimalgoritmo
