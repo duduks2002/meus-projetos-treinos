@@ -2,8 +2,6 @@
 # Professor: Eliane
 # Descrição: Programa para analisar o usuário para o seguro desemprego.
 # Aluno1: Edward  N6247G8 
-# Aluno2: Felipe Maia N6414E1 
-# Aluno3: Giuliana Branco N675489
 # Data atual: "21/09/2020"
 #Algoritmo "Seguro-Desemprego"
 
