@@ -4,7 +4,7 @@
 # Prof.Eliane
 #CC2A39                             
 
-#variáveis
+#variÃ¡veis
 branco =0
 branco_pref =0
 nulo =0
@@ -27,9 +27,9 @@ ele = 1
 eltr=int(input("Quantos eleitores no total?"))
 
 while (ele <= eltr):       
-   print(f"Eleição para Prefeito e Vereador. Olá, eleitor {ele},continue para")
+   print(f"EleiÃ§Ã£o para Prefeito e Vereador. OlÃ¡, eleitor {ele},continue para")
    print(" exercer seu direito de voto.")
-   print("Nesse momento, está em aberto os cargos políticos dos partidos:")
+   print("Nesse momento, estÃ¡ em aberto os cargos polÃ­ticos dos partidos:")
    print("PSB: ")
    print(" 01 - CANDIDATO PREFEITO 1")
    print("      20 - Candidato vereador A")
@@ -43,9 +43,9 @@ while (ele <= eltr):
    print("      26 - Candidato vereador G")
    print("Para votar em branco digite: 10")
    print("Para anular o voto digite: 11")
-   print("OBS: Caso o eleitor não tenha comparecido, digitar zero")
-   voto=int(input("Escreva o respectivo número do seu (sua) vereador(a)"))
-   votop=int(input("Escreva o respectivo número do seu (sua) prefeito (a)"))
+   print("OBS: Caso o eleitor nÃ£o tenha comparecido, digitar zero")
+   voto=int(input("Escreva o respectivo nÃºmero do seu (sua) vereador(a)"))
+   votop=int(input("Escreva o respectivo nÃºmero do seu (sua) prefeito (a)"))
 
    ele+=1
 #votos vereador
@@ -77,7 +77,7 @@ while (ele <= eltr):
       pdb+=1
       vg+=1
    else:
-      print("Número inválido !!!")
+      print("NÃºmero invÃ¡lido !!!")
       ele-=1   
 #voto prefeito
    if(votop==10):
@@ -93,7 +93,7 @@ while (ele <= eltr):
    elif(votop==0):
       falta+=1
    else:
-      print("Número inválido !!!")
+      print("NÃºmero invÃ¡lido !!!")
       ele-=1
 #candidatos mais votados(vereador)
 maior = va
@@ -123,18 +123,18 @@ if (pb>pa):
    maior_pref=pb
    pref=("Candidato 2")
 
-print(f"Números de votos para o partido PSB {psb}")
-print(f"Números de votos para o partido PDB {pdb}")
-print(f"Números de votos para o Candidato A {va}")
-print(f"Números de votos para o Candidato B {vb}")
-print(f"Números de votos para o Candidato C {vc}")
-print(f"Números de votos para o Candidato D {vd}")
-print(f"Números de votos para o Candidato E {ve}")
-print(f"Números de votos para o Candidato F {vf}")
-print(f"Números de votos para o Candidato G {vg}")
+print(f"NÃºmeros de votos para o partido PSB {psb}")
+print(f"NÃºmeros de votos para o partido PDB {pdb}")
+print(f"NÃºmeros de votos para o Candidato A {va}")
+print(f"NÃºmeros de votos para o Candidato B {vb}")
+print(f"NÃºmeros de votos para o Candidato C {vc}")
+print(f"NÃºmeros de votos para o Candidato D {vd}")
+print(f"NÃºmeros de votos para o Candidato E {ve}")
+print(f"NÃºmeros de votos para o Candidato F {vf}")
+print(f"NÃºmeros de votos para o Candidato G {vg}")
 print(f"Votos em Branco para vereador {branco}")
 print(f"Votos nulos para vereador {nulo}")
 print(f"Votos em Branco para prefeito {branco_pref}")
 print(f"Votos nulos para prefeito  {nulo_pref}")
-print(f"Maior número de votos para vereador(a):  {ver}, com {maior} votos.")
-print(f"Maior número de votos para prefeito(a):  {pref}, com {maior_pref} votos.")   
+print(f"Maior nÃºmero de votos para vereador(a):  {ver}, com {maior} votos.")
+print(f"Maior nÃºmero de votos para prefeito(a):  {pref}, com {maior_pref} votos.")   
